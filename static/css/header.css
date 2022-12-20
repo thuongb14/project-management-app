@@ -22,6 +22,10 @@
   font-size: 30px;
   font-family: 'Seymour One', sans-serif;
 }
+.logo > a {
+  color: black;
+  cursor: pointer;
+}
 
 .right-header {
   justify-content: flex-end;
@@ -35,6 +39,11 @@
   margin: 0;
   padding: 0;
   gap: 2rem;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
 }
 
 li {

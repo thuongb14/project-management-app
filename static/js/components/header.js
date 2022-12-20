@@ -2,11 +2,11 @@ export function renderHeader() {
   const header = document.querySelector('#header-nav');
   header.innerHTML = `
     <div class="left-header">
-    <div class="logo">PMA</div>
+    <div class="logo"><a id="pLogo">PMA</a></div>
     <ul class="nav-section">
-      <li>Why Us?</li>
-      <li>Features</li>
-      <li>Blog</li>
+      <li><a id="whyUs">Why Us?</a></li>
+      <li><a id="features">Features</a></li>
+      <li><a id="blog">Blog</a></li>
     </ul>
   </div>
   <div class="right-header">
