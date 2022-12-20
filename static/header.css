@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+* {
+  margin: 0;
+}
+
+#header-nav,
+.left-header,
+.right-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0;
+  gap: 5rem;
+}
+
+#header-nav {
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: 'Seymour One', sans-serif;
+}
+
+.right-header {
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+.nav-section {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  color: grey;
+}
+
+li:hover {
+  cursor: pointer;
+  color: black;
+  border-bottom: 3px solid #f65f7c;
+}
+
+.sign-up-button {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.sign-up-button:hover {
+  background-color: #f65f7c;
+  color: black;
+}
