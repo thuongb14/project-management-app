@@ -49,13 +49,17 @@ li:hover {
   border-bottom: 3px solid #f65f7c;
 }
 
-.sign-up-button {
+.sign-up-button, .login-button {
   background-color: black;
   color: white;
   border: none;
 }
 
 .sign-up-button:hover {
+  background-color: #f65f7c;
+  color: black;
+}
+.login-button:hover{
   background-color: #f65f7c;
   color: black;
 }
