@@ -8,7 +8,12 @@ const PORT = 3000
 
 app.use(express.static("static"));
 app.use(bodyParser.json());
+
+app.use('/', express.static('static')); // <--- base bath using files in static folders
+
 app.use("/", router);
+
+
 
 
 // app.get("/api/hello", (req, res) => {
