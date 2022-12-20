@@ -2,7 +2,7 @@ export function getstartedButton() {
     const signupButton = document.getElementById('signUp')
 
     signupButton.addEventListener('click', () => {
-        console.log('test')
+        // console.log('test')
         const sectionContent = document.getElementById('content')
         sectionContent.innerHTML = `
         <form>
