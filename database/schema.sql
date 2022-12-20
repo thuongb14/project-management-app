@@ -18,23 +18,17 @@ CREATE TABLE projects (
     members VARCHAR(50)
 );
 
-CREATE TABLE lists (
-    listID SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
+
+CREATE TABLE project_tasks (
+    tasksID SERIAL PRIMARY KEY,
+    task TEXT,
+    status TEXT NOT NULL,
+
     project_id INTEGER,
 
         CONSTRAINT fk_projects
             FOREIGN KEY (project_id)
                 REFERENCES projects(projectID)
-);
 
-CREATE TABLE project_tasks (
-    tasksID SERIAL PRIMARY KEY,
-    task VARCHAR(100),
-    list_id INTEGER,
-
-        CONSTRAINT fk_lists
-            FOREIGN KEY (list_id)
-                REFERENCES lists(listID)
 );
 
