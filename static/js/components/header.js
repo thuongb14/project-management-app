@@ -1,4 +1,4 @@
-function renderHeader() {
+export function renderHeader() {
   const header = document.querySelector('#header-nav');
   header.innerHTML = `
     <div class="left-header">
