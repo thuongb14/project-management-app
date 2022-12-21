@@ -10,7 +10,7 @@ export function getstartedButton() {
             <input type="email" name="email" id="email" required>
           </label>
           <label for="password">Password*: 
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </label>
           <button type="submit">Submit</button>
         </form>
