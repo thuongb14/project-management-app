@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
 * {
   margin: 0;
+  --main-blue: #5585b5;
+  --sub-blue: #79c2d0;
+  --light-blue: #bbe4e9;
+}
+
+header {
+  height: 70px;
 }
 
 #header-nav,
@@ -55,22 +63,16 @@ li {
 li:hover {
   cursor: pointer;
   color: black;
-  border-bottom: 3px solid #f65f7c;
+  border-bottom: 3px solid var(--main-blue);
 }
 
-.sign-up-button {
-  background-color: black;
-  color: white;
+#log-in {
+  background-color: var(--light-blue);
+  color: black;
   border: none;
 }
 
-.sign-up-button:hover {
-  background-color: #f65f7c;
-  color: black;
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#log-in:hover {
+  background-color: var(--sub-blue);
+  color: white;
 }

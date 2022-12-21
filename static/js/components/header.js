@@ -11,7 +11,7 @@ export function renderHeader() {
   </div>
   <div class="right-header">
     <div class="user">Welcome [user-name]</div>
-    <button id="signUp" class="sign-up-button">Get Started</button>
+    <button id="log-in">Log In</button>
   </div>
   `;
 }
