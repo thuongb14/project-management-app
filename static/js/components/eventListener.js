@@ -1,4 +1,4 @@
-import { getstartedButton } from "../static/js/components/getStarted.js";
+import { getstartedButton } from "./getStarted.js";
 
 export function whyUsLink() {
   const whyUs = document.getElementById("whyUs");
