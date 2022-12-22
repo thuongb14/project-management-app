@@ -1,6 +1,4 @@
 export function renderLogin() {
-
-
     const loginPage = document.getElementById("content")
     loginPage.innerHTML = `
         <div class="login"> 
