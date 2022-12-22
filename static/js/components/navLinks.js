@@ -1,3 +1,4 @@
+import { renderLogin } from "./login.js";
 import { renderLandingPage } from "./landingPage.js";
 
 export function whyUsLink() {
@@ -22,3 +23,12 @@ export function featuresLink() {
   })
 }
 
+
+export function loginPageLink(){
+  console.log("render");
+  const loginBtn = document.getElementById("log-in")
+  loginBtn.addEventListener("click", ()=>{
+      console.log("clicked");
+      renderLogin()
+    })
+}
