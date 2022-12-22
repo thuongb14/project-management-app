@@ -1,6 +1,6 @@
 import { renderHeader } from "./components/header.js";
 import { getstartedButton } from "./components/getStarted.js"
-import { whyUsLink, featuresLink, blogLink } from "./components/navLinks.js"
+import { whyUsLink, featuresLink, blogLink } from "../../controllers/navLinks.js"
 import {renderLandingPage} from "./components/landingPage.js"
 //initial rendering
 renderHeader()
