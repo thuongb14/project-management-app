@@ -1,3 +1,5 @@
+import { renderLogin } from "./login.js";
+
 export function whyUsLink() {
   const whyUs = document.getElementById('whyUs');
   whyUs.addEventListener('click', () => {
@@ -33,4 +35,13 @@ export function blogLink() {
         <p>Blog Post 1</p>
         `;
   });
+}
+
+export function loginPageLink(){
+  console.log("render");
+  const loginBtn = document.getElementById("log-in")
+  loginBtn.addEventListener("click", ()=>{
+      console.log("clicked");
+      renderLogin()
+    })
 }
