@@ -9,7 +9,7 @@ renderLandingPage()
 //header on click
 featuresLink()
 blogLink()
-
+whyUsLink()
 //other element on click
 window.addEventListener('click', (e) => {
     if (e.target.id === 'pLogo') {
