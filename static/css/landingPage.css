@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  --main-blue: #5585b5;
+  --sub-blue: #79c2d0;
+  --light-blue: #bbe4e9;
+}
+
+#first-row-section {
+    height: 700px;
+    width: 100vw;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMjItbWluZC0xNl8xLmpwZw.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    background: white;
+    display: flex;
+    width: 80%;
+    height: 75%;
+    position: relative;
+    top: 10%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    gap: 2rem;
+}
+
+.first-row-left {
+    width: 50%;
+    padding-left: 5rem;
+    position: relative;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.sign-up-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+#sign-up {
+  background-color: var(--main-blue);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 25px var(--sub-blue);
+}
+
+#sign-up:hover {
+  background-color: var(--sub-blue);
+  color: black;
+}
+
+.note {
+  color: rgb(109, 109, 109);
+  font-size: 13px;
+}
+
+.first-row-right {
+    width: 50%;
+}
+
+.first-row-right > img {
+    padding-right: 2rem;
+    width: 80%;
+    height: auto;
+}
+
+
