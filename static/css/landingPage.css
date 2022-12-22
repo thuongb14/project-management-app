@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  overflow-x: hidden;
   --main-blue: #5585b5;
   --sub-blue: #79c2d0;
   --light-blue: #bbe4e9;
@@ -7,7 +8,7 @@
 
 #first-row-section {
   height: 700px;
-  width: 100vw;
+  width: 100%;
   background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yMjItbWluZC0xNl8xLmpwZw.jpg');
   background-size: cover;
   display: flex;
@@ -75,8 +76,8 @@ h4 {
 }
 
 #second-row-section {
-  height: 700px;
-  width: 100vw;
+  height: fit-content;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   padding: 2rem;
@@ -118,4 +119,15 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   color: var(--main-blue);
+}
+
+
+#third-row-section {
+  background-color: var(--light-blue);
+  margin: 2rem;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }

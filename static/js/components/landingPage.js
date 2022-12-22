@@ -1,7 +1,7 @@
 export function renderLandingPage() {
   const main = document.querySelector('#content');
   main.innerHTML = `
-  <div id="first-row-section">
+<div id="first-row-section">
   <div id="container">
     <div class="first-row-left">
       <h4>
@@ -45,5 +45,11 @@ export function renderLandingPage() {
     </div>
   </div>
 </div>
+
+<div id="third-row-section">
+  <h3>Why Us?</h3>
+  <p>Why not?</p>
+</div>
+
 `;
 }
