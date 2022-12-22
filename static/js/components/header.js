@@ -4,9 +4,8 @@ export function renderHeader() {
     <div class="left-header">
     <div class="logo"><a id="pLogo">PMA</a></div>
     <ul class="nav-section">
-      <li><a id="whyUs">Why Us?</a></li>
       <li><a id="features">Features</a></li>
-      <li><a id="blog">Blog</a></li>
+      <li><a id="whyUs">Why Us?</a></li>
     </ul>
   </div>
   <div class="right-header">
