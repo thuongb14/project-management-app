@@ -12,7 +12,6 @@ renderLandingPage();
 //header on click
 whyUsLink()
 featuresLink()
-blogLink()
 loginPageLink()
 
 
