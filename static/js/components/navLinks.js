@@ -31,4 +31,28 @@ export function loginPageLink(){
       console.log("clicked");
       renderLogin()
     })
+
 }
+
+window.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (event.target.id === "signUp") {
+    const form = new FormData(document.getElementById("signUpForm"));
+    const info = {
+      name: form.get("name"),
+      email: form.get("email"),
+      password: form.get("password"),
+    };
+    console.log(info);
+    axios
+      .put(`/sign-up`, info)
+      .then((response) => {
+        console.log(response);
+        console.log("test");
+        getstartedButton();
+      })
+      .catch((err) => {
+        console.log(err.response);
+      });
+  }
+});

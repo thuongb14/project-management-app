@@ -1,8 +1,8 @@
 export function getstartedButton() {
-  const sectionContent = document.getElementById('content');
+  const sectionContent = document.getElementById("content");
   sectionContent.innerHTML = `
         <h4>Sign Up</h4>
-        <form action="POST">
+        <form id="signUpForm" method="PUT">
           <label for="name">Name*: 
             <input type="text" name="name" id="name" required>
           </label>
@@ -12,7 +12,9 @@ export function getstartedButton() {
           <label for="password">Password*: 
             <input type="password" name="password" id="password" required>
           </label>
-          <button type="submit">Submit</button>
+          <button id="signUp" type="submit">Submit</button>
         </form>
         `;
 }
+
+

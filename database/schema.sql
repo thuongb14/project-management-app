@@ -9,13 +9,13 @@ CREATE TABLE users (
     email VARCHAR(50) NOT NULL,
     password VARCHAR(50) NOT NULL,
     profilePic TEXT,
-    admin BOOLEAN
+    admin BOOLEAN,
+    projects TEXT
 );
 
 CREATE TABLE projects (
     projectID SERIAL PRIMARY KEY,
-    project_name TEXT,
-    members VARCHAR(50)
+    project_name TEXT
 );
 
 
