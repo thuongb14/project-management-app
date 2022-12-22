@@ -7,7 +7,6 @@ renderHeader()
 renderLandingPage()
 
 //header on click
-featuresLink()
 blogLink()
 
 //other element on click

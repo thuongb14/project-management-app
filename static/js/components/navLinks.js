@@ -10,20 +10,6 @@ export function whyUsLink() {
   });
 }
 
-export function featuresLink() {
-  const features = document.getElementById('features');
-  features.addEventListener('click', () => {
-    const content = document.getElementById('content');
-    content.innerHTML = `
-        <h1>Features</h1>
-        <ul>
-            <li>User Friendly</li>
-            <li>No Load Times</li>
-        </ul>
-        `;
-  });
-}
-
 export function blogLink() {
   const blog = document.getElementById('blog');
   blog.addEventListener('click', () => {
