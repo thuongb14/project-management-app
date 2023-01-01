@@ -2,18 +2,11 @@ import { renderHeader } from './components/header.js';
 import { getstartedButton } from './components/getStarted.js';
 import { featuresLink, whyUsLink, loginPageLink } from './components/navLinks.js';
 import { renderLandingPage } from './components/landingPage.js';
-
+import { logOut } from "./components/logout.js"
 
 //initial rendering
 renderHeader();
 renderLandingPage();
-
-
-//header on click
-whyUsLink()
-featuresLink()
-loginPageLink()
-
 
 
 //other element on click
@@ -23,5 +16,17 @@ window.addEventListener('click', (e) => {
   }
   if (e.target.id === 'sign-up') {
     getstartedButton();
+  }
+  if (e.target.id === 'whyUs') {
+    whyUsLink()
+  }
+  if (e.target.id === 'features') {
+    featuresLink()
+  }
+  if(e.target.id === 'log-in') {
+    loginPageLink()
+  }
+  if (e.target.id === 'log-out') {
+    logOut()
   }
 });

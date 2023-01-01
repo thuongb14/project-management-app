@@ -6,8 +6,8 @@ DROP TABLE IF EXISTS lists CASCADE;
 CREATE TABLE users (
     userID SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    password VARCHAR(50) NOT NULL,
+    email TEXT NOT NULL,
+    password TEXT NOT NULL,
     profilePic TEXT,
     admin BOOLEAN,
     projects TEXT
