@@ -13,6 +13,7 @@ CREATE TABLE users (
 CREATE TABLE projects (
     projectID SERIAL PRIMARY KEY,
     project_name TEXT,
+    priority TEXT,
 
     user_id INTEGER,
 
