@@ -12,6 +12,9 @@ export function renderLogin() {
           </label>
           <button id="logIn" type="submit">Log In</button>
         </form>
+        <form id="guestLogInForm" method="POST">
+        <button id="logInGuest" type="submit">Log In as Guest</button>
+        </form>
         `;
         login()
 }
@@ -37,4 +40,23 @@ function login() {
         })
         ;
     });
+
+    const guestForm = document.querySelector('#guestLogInForm')
+    guestForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = {
+        email: 'guest@example.com',
+        password: 'guest123'
+      };
+      axios
+        .post('/api/session', data)
+        .then((response) => {
+          alert.textContent = `${response.data.user.name} has logged in`;
+          location.reload()
+        })
+        .catch((err) => {
+          alert.textContent = err.response.data.message
+        })
+        ;
+    })
   }
