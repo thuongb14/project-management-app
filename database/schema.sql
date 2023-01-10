@@ -8,14 +8,18 @@ CREATE TABLE users (
     name VARCHAR(50) NOT NULL,
     email TEXT NOT NULL,
     password TEXT NOT NULL,
-    profilePic TEXT,
-    admin BOOLEAN,
-    projects TEXT
+    
 );
 
 CREATE TABLE projects (
     projectID SERIAL PRIMARY KEY,
     project_name TEXT
+
+    user_id INTEGER,
+
+        CONSTRAINT fk_users
+            FOREIGN KEY (user_id)
+                REFERENCES users(userID)
 );
 
 
