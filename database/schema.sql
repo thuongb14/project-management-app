@@ -6,13 +6,13 @@ CREATE TABLE users (
     userID SERIAL PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
     email TEXT NOT NULL,
-    password TEXT NOT NULL,
+    password TEXT NOT NULL
     
 );
 
 CREATE TABLE projects (
     projectID SERIAL PRIMARY KEY,
-    project_name TEXT
+    project_name TEXT,
 
     user_id INTEGER,
 
