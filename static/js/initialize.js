@@ -3,7 +3,7 @@ import { getstartedButton } from './components/getStarted.js';
 import { featuresLink, whyUsLink, loginPageLink } from './components/navLinks.js';
 import { renderLandingPage } from './components/landingPage.js';
 import { logOut } from "./components/logout.js"
-
+import { renderDashboardProject } from "./components/dashboardProject.js"
 //initial rendering
 renderHeader();
 renderLandingPage();
@@ -28,5 +28,8 @@ window.addEventListener('click', (e) => {
   }
   if (e.target.id === 'log-out') {
     logOut()
+  }
+  if (e.target.id === 'dashboard'){
+    renderDashboardProject()
   }
 });

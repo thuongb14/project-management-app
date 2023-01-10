@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
       })
     }
     req.session.user = {
-      id: user.id,
+      id: user.userid,
       name: user.name,
       email: user.email,
     };
