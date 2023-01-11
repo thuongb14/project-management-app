@@ -14,7 +14,8 @@ CREATE TABLE projects (
     projectID SERIAL PRIMARY KEY,
     project_name TEXT,
     priority TEXT,
-
+    members TEXT,
+    
     user_id INTEGER,
 
         CONSTRAINT fk_users
