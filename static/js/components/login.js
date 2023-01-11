@@ -1,3 +1,6 @@
+import { renderDashboardProject } from "./dashboardProject.js";
+import { renderHeader } from "./header.js";
+
 export function renderLogin() {
     const loginPage = document.getElementById("content")
     loginPage.innerHTML = `
@@ -33,7 +36,8 @@ function login() {
         .post('/api/session', data)
         .then((response) => {
           alert.textContent = `${response.data.user.name} has logged in`;
-          location.reload()
+          renderHeader()
+          renderDashboardProject()
         })
         .catch((err) => {
           alert.textContent = err.response.data.message
@@ -52,7 +56,8 @@ function login() {
         .post('/api/session', data)
         .then((response) => {
           alert.textContent = `${response.data.user.name} has logged in`;
-          location.reload()
+          renderHeader()
+          renderDashboardProject()
         })
         .catch((err) => {
           alert.textContent = err.response.data.message
