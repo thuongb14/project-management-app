@@ -4,6 +4,7 @@ import { featuresLink, whyUsLink, loginPageLink } from './components/navLinks.js
 import { renderLandingPage } from './components/landingPage.js';
 import { logOut } from "./components/logout.js"
 import { renderDashboardProject } from "./components/dashboardProject.js"
+import { editProject, openEditModal } from './components/editProject.js';
 //initial rendering
 renderHeader();
 renderLandingPage();
@@ -31,5 +32,14 @@ window.addEventListener('click', (e) => {
   }
   if (e.target.id === 'dashboard'){
     renderDashboardProject()
+  }
+  if (e.target.id === 'edit-project') {
+    openEditModal(e)
+  }
+  if (e.target.id === 'close-modal') {
+    document.querySelector('.modal').classList.add('hidden')
+  }
+  if (e.target.id === 'submit-edit') {
+    editProject()
   }
 });
