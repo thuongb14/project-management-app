@@ -13,10 +13,21 @@ router.get('/', (req, res) => {
   });
 });
 
-router.put('/', (req, res) => {
+router.patch('/', (req, res) => {
   const { project_name, priority, projectid } = req.body;
+  console.log(req.body)
   const sql = "UPDATE projects SET project_name = $1, priority = $2 WHERE projectid = $3";
   db.query(sql, [project_name, priority, projectid])
+    .then(() => {
+      console.log(sql)
+      res.json({ status: "ok" });
+    })
+})
+
+router.delete('/:id', (req, res) => {
+  let id = req.params.id;
+  const sql = "DELETE FROM projects WHERE projectid = $1";
+  db.query(sql, [id])
     .then(() => {
       console.log(sql)
       res.json({ status: "ok" });
