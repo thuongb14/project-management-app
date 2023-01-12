@@ -7,6 +7,7 @@ import { renderDashboardProject } from "./components/dashboardProject.js"
 import { editProject, openEditModal } from './components/editProject.js';
 import {addProjectBoard, openProjectModal } from "./components/createBoard.js"
 
+import { deleteProject, openDeleteProjectModal } from './components/deleteProject.js';
 //initial rendering
 renderHeader();
 renderLandingPage();
@@ -51,4 +52,10 @@ window.addEventListener('click', (e) => {
     addProjectBoard(e)
   }
 
+  if (e.target.id === 'delete-project') {
+    openDeleteProjectModal(e)
+  }
+  if (e.target.id === 'submit-delete') {
+    deleteProject(e)
+  }
 });
