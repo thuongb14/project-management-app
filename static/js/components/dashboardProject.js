@@ -3,8 +3,10 @@ export function renderDashboardProject() {
   main.innerHTML = `
     <div class="heading-background-img">
     <h3>Current Projects</h3>
+        
     </div>
     <div class="search-bar">
+    <button id="add-project">Add new project</button>
     <form action="#" class="search">
       <input
         type="text"
@@ -17,7 +19,7 @@ export function renderDashboardProject() {
   </div>
     <div class="all-projects">
     </div>
-    <button class="add-project">Add new project</button>
+
     `;
   axios.get(`/api/session`).then((response) => {
     const sessionUserId = response.data.session[0].sess.user.id;
@@ -43,3 +45,4 @@ export function renderDashboardProject() {
     });
   });
 }
+

@@ -23,4 +23,19 @@ router.put('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+  console.log("Submit form");
+  const {project_name, priority} = req.body 
+  
+  console.log(project_name);
+  const sql = "INSERT INTO projects (project_name, priority) VALUES ($1, $2)";
+  console.log(sql);
+  db.query(sql, [project_name, priority])
+    .then(() => {
+      res.json({ status: "ok" });
+    }).catch((err)=> {console.error(err)})
+   
+  
+})
+
 module.exports = router;
