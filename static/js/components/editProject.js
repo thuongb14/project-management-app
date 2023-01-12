@@ -29,6 +29,9 @@ export function openEditModal(e) {
                 <option value="low">Low</option>
               </select>
             </label>
+            <label for="members">Assign members*: 
+                <input type="text" name="members" id="members" placeholder="Separate by comma...">
+            </label>
             <div class="control-buttons">
             <button type="button" id="close-modal">Close</button>
             <button id="submit-edit" type="submit">Submit</button>
@@ -49,9 +52,10 @@ export function editProject() {
       projectid: form.get('projectid'),
       // members: form.get("project_members"), // hidden temporary because need to change in data
     };
-    axios.put('/api/projects', data).then((response) => {
+    axios.patch('/api/projects', data).then(() => {
       document.querySelector('.modal').classList.add('hidden');
       renderDashboardProject();
+      console.log(data)
     });
   });
 }
