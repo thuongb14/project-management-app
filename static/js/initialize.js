@@ -3,7 +3,7 @@ import { getstartedButton } from './components/getStarted.js';
 import { featuresLink, whyUsLink, loginPageLink } from './components/navLinks.js';
 import { renderLandingPage } from './components/landingPage.js';
 import { logOut } from "./components/logout.js"
-import { renderDashboardProject } from "./components/dashboardProject.js"
+import { renderDashboardProject, searchBar } from "./components/dashboardProject.js"
 import { editProject, openEditModal } from './components/editProject.js';
 import {addProjectBoard, openProjectModal } from "./components/createBoard.js"
 
@@ -16,27 +16,31 @@ import { deleteTask } from './components/deleteTask.js';
 renderHeader();
 renderLandingPage();
 
+const landingController = (() => {
+  window.addEventListener('click', (e) => {
+    if (e.target.id === 'pLogo') {
+      renderLandingPage();
+    }
+    if (e.target.id === 'sign-up') {
+      getstartedButton();
+    }
+    if (e.target.id === 'whyUs') {
+      whyUsLink()
+    }
+    if (e.target.id === 'features') {
+      featuresLink()
+    }
+    if(e.target.id === 'log-in') {
+      loginPageLink()
+    }
+    if (e.target.id === 'log-out') {
+      logOut()
+    }
+  })
+})()
 
-//other element on click
-window.addEventListener('click', (e) => {
-  if (e.target.id === 'pLogo') {
-    renderLandingPage();
-  }
-  if (e.target.id === 'sign-up') {
-    getstartedButton();
-  }
-  if (e.target.id === 'whyUs') {
-    whyUsLink()
-  }
-  if (e.target.id === 'features') {
-    featuresLink()
-  }
-  if(e.target.id === 'log-in') {
-    loginPageLink()
-  }
-  if (e.target.id === 'log-out') {
-    logOut()
-  }
+const projectController = ((e) => {
+  window.addEventListener('click', (e) => {
   if (e.target.id === 'dashboard'){
     renderDashboardProject()
   }
@@ -62,25 +66,37 @@ window.addEventListener('click', (e) => {
   if (e.target.id === 'submit-delete') {
     deleteProject(e)
   }
-  if (e.target.className === 'heading') {
-    renderTasks(e)
+  if (e.target.className === 'search-box') {
+    searchBar(e)
   }
-  if (e.target.className === 'add-task') {
-    addTaskModal(e)
-  }
-  if (e.target.className === 'submit-add-task') {
-    addTask()
-    renderTasks(e)
-  }
-  if (e.target.className.includes('edit-task')) {
-    openEditTaskModal(e)
-  }
-  if (e.target.className.includes('submit-edit-task')) {
-    editTask()
-    renderTasks(e)
-  }
-  if (e.target.className.includes('remove-task')) {
-    deleteTask(e)
-    renderTasks(e)
-  }
-});
+  })
+})()
+
+
+const tasksController = (() => {
+  window.addEventListener('click', (e) => {
+    if (e.target.className === 'heading') {
+      renderTasks(e)
+    }
+    if (e.target.className === 'add-task') {
+      addTaskModal(e)
+    }
+    if (e.target.className === 'submit-add-task') {
+      addTask()
+      renderTasks(e)
+    }
+    if (e.target.className.includes('edit-task')) {
+      openEditTaskModal(e)
+    }
+    if (e.target.className.includes('submit-edit-task')) {
+      editTask()
+      renderTasks(e)
+    }
+    if (e.target.className.includes('remove-task')) {
+      deleteTask(e)
+      renderTasks(e)
+    }
+  });
+})()
+
+
