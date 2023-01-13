@@ -46,3 +46,21 @@ export function renderDashboardProject() {
   });
 }
 
+export function searchBar(e) {
+  const search = document.querySelector('.search');
+  search.addEventListener('submit', () => {
+    const allCards = document.querySelectorAll('.card');
+    let input = document.querySelector('.search-box').value.toLowerCase();
+    console.log(input);
+    allCards.forEach((card) => {
+      if (card.firstElementChild.textContent.toLowerCase().includes(input)) {
+        card.style = 'display: ';
+      } else if (input == '') {
+        card.style = 'display: ';
+      } else {
+        card.style = 'display: none';
+      }
+    });
+  });
+  e.preventDefault();
+}
