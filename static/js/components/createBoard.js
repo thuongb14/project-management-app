@@ -29,19 +29,26 @@ export function openProjectModal(e) {
 
 export function addProjectBoard(e) {
     const addProject = document.querySelector('#add-project-form');
+    // const sessionUserId = response.data.session[0].sess.user.id;
     addProject.addEventListener('submit',(e) =>{
         e.preventDefault();
-        const form = new FormData(addProject);
-        const data = {
-        project_name: form.get('project_name'),
-        priority: form.get('priority'),
         
-        // members: form.get("project_members"), // hidden temporary because need to change in data
-        };
-        axios.post('/api/projects', data).then((response) => {
-        document.querySelector('.modal').classList.add('hidden');
-        renderDashboardProject();
-        });
+        axios.get(`/api/session`).then((response) => {
+          const sessionUserId = response.data.session[0].sess.user.id;
+          // console.log(sessionUserId)
+          const form = new FormData(addProject);
+          const data = {
+          project_name: form.get('project_name'),
+          priority: form.get('priority'),
+          userId: sessionUserId
+          // members: form.get("project_members"), // hidden temporary because need to change in data
+          };
+          // console.log(data)
+          axios.post('/api/projects', data).then((response) => {
+            document.querySelector('.modal').classList.add('hidden');
+            renderDashboardProject();
+          });
+        })
   ;
     })
     
