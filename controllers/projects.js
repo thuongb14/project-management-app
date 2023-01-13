@@ -24,6 +24,20 @@ router.patch('/', (req, res) => {
     })
 })
 
+router.post('/', (req, res) => {
+  // console.log("Submit form");
+  // console.log(req.body)
+  const { project_name, priority, userId } = req.body
+
+  // console.log(project_name);
+  const sql = "INSERT INTO projects (project_name, priority, user_id) VALUES ($1, $2, $3)";
+  // console.log(sql);
+  db.query(sql, [project_name, priority, userId])
+    .then(() => {
+      res.json({ status: "ok" });
+    }).catch((err) => { console.error(err) })
+})
+
 router.delete('/:id', (req, res) => {
   let id = req.params.id;
   const sql = "DELETE FROM projects WHERE projectid = $1";

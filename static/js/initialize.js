@@ -5,6 +5,8 @@ import { renderLandingPage } from './components/landingPage.js';
 import { logOut } from "./components/logout.js"
 import { renderDashboardProject } from "./components/dashboardProject.js"
 import { editProject, openEditModal } from './components/editProject.js';
+import {addProjectBoard, openProjectModal } from "./components/createBoard.js"
+
 import { deleteProject, openDeleteProjectModal } from './components/deleteProject.js';
 import { renderTasks } from './components/tasks.js';
 import { addTask, addTaskModal } from './components/addTask.js';
@@ -47,6 +49,13 @@ window.addEventListener('click', (e) => {
   if (e.target.id === 'submit-edit') {
     editProject()
   }
+  if (e.target.id === "add-project"){
+    openProjectModal(e)
+  }
+  if (e.target.id === "submit-project"){
+    addProjectBoard(e)
+  }
+
   if (e.target.id === 'delete-project') {
     openDeleteProjectModal(e)
   }
