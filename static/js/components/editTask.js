@@ -20,7 +20,7 @@ export function openEditTaskModal(e) {
         </label>
             <label for="task">Task Description*: 
               <textarea name="task" id="task" cols="40" 
-              rows="5" required></textarea>
+              rows="5" required>${response.task}</textarea>
             </label>
             <label for="status">Status*: 
               <select id="status" name="status">
