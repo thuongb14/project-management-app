@@ -52,6 +52,7 @@ export function editProject() {
       projectid: form.get('projectid'),
       // members: form.get("project_members"), // hidden temporary because need to change in data
     };
+    console.log(data)
     axios.patch('/api/projects', data).then(() => {
       document.querySelector('.modal').classList.add('hidden');
       renderDashboardProject();

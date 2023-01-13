@@ -7,6 +7,7 @@ const bodyParser = require("body-parser")
 const users = require("./controllers/users");
 const session = require("./controllers/session");
 const projects = require("./controllers/projects");
+const tasks = require("./controllers/tasks");
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use(bodyParser.json());
 app.use('/api/users', users);
 app.use('/api/session', session);
 app.use('/api/projects', projects);
+app.use('/api/tasks', tasks);
 
 
 app.listen(PORT, () => {

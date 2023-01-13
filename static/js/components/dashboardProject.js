@@ -29,7 +29,7 @@ export function renderDashboardProject() {
             'beforeend',
             `
             <div class="card">
-            <div class="heading">${proj.project_name}</div>
+            <div id=${proj.projectid} class="heading">${proj.project_name}</div>
             <div class="priority">Priority: <span class="${proj.priority}">${proj.priority}</span></div>
             <div class="control-buttons">
             <i data-project-id="${proj.projectid}" id="edit-project" class="fa fa-edit"></i>

@@ -1,0 +1,43 @@
+#all-tasks {
+    margin:2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+
+.todo, .doing, .done {
+    border: 2px solid var(--light-blue);
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100vh;
+    margin: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+  }
+  
+
+li {
+    flex-flow: row nowrap;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.fa-edit {
+    margin-right: 1rem;
+}
+
+.fa-edit:hover {
+    zoom: 120%;
+}
+
+.fa-xmark:hover {
+    zoom:120%
+}
