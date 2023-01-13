@@ -9,7 +9,7 @@ export function renderTasks(e) {
     })
     .then((response) => {
       main.innerHTML = `
-        <div class="heading-background-img">
+        <div class="tasks-heading-background-img">
         <h3>${response.project_name}</h3>
       </div>
       <button id=${response.projectid} class="add-task">Add a Task</button>
