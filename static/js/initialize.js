@@ -8,6 +8,10 @@ import { editProject, openEditModal } from './components/editProject.js';
 import {addProjectBoard, openProjectModal } from "./components/createBoard.js"
 
 import { deleteProject, openDeleteProjectModal } from './components/deleteProject.js';
+import { renderTasks } from './components/tasks.js';
+import { addTask, addTaskModal } from './components/addTask.js';
+import { editTask, openEditTaskModal } from './components/editTask.js';
+import { deleteTask } from './components/deleteTask.js';
 //initial rendering
 renderHeader();
 renderLandingPage();
@@ -57,5 +61,26 @@ window.addEventListener('click', (e) => {
   }
   if (e.target.id === 'submit-delete') {
     deleteProject(e)
+  }
+  if (e.target.className === 'heading') {
+    renderTasks(e)
+  }
+  if (e.target.className === 'add-task') {
+    addTaskModal(e)
+  }
+  if (e.target.className === 'submit-add-task') {
+    addTask()
+    renderTasks(e)
+  }
+  if (e.target.className.includes('edit-task')) {
+    openEditTaskModal(e)
+  }
+  if (e.target.className.includes('submit-edit-task')) {
+    editTask()
+    renderTasks(e)
+  }
+  if (e.target.className.includes('remove-task')) {
+    deleteTask(e)
+    renderTasks(e)
   }
 });
