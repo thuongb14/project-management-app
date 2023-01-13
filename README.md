@@ -124,10 +124,7 @@ Help manage all your projects, who's a part of them and what tasks haven't start
 * [![Express][Express]][Express-url]
 * [![Node][NODE]][NODE-url]
 * [![PostGres][PostGres]][PostGres-url]
-<!-- * [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url] -->
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,9 +194,9 @@ These are the prerequisate software needed for app the run locally.
 - [✅] Dashboard show all projects
     - [ ] Delete Projects
     - [✅] Edit Projects
-    - [🚧] create projects
-        - [🚧] Project tasks
-        - [🚧] Add tasks
+    - [✅] create projects
+        - [✅] Project tasks
+        - [✅] Add tasks
     - [ ] Add members to projects
     
 
@@ -215,7 +212,7 @@ These are the prerequisate software needed for app the run locally.
 <!-- Bugs & Issues -->
 ### Bugs & Issues
 - Getting Project Delete button to work, had some issues parsing project id from front end to back end.
-- Create project button responding with 404 after moving route to proper js file.
+- Create project button responding with 404 after moving route to proper js file. Issue is now fixed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -34,8 +34,8 @@ export function renderDashboardProject() {
             <div id=${proj.projectid} class="heading">${proj.project_name}</div>
             <div class="priority">Priority: <span class="${proj.priority}">${proj.priority}</span></div>
             <div class="control-buttons">
-            <i data-project-id="${proj.projectid}" id="edit-project" class="fa fa-edit"></i>
-            <i data-project-id="${proj.projectid}" id="delete-project" class="fa fa-check"></i>
+            <i data-project-id="${proj.projectid}" id="edit-project" class="fa fa-edit"><span class="tooltipEdit">Edit Project</span></i>
+            <i data-project-id="${proj.projectid}" id="delete-project" class="fa fa-check"><span class="tooltipDelete">Delete Project</span></i>
             </div>
           </div>
             `
