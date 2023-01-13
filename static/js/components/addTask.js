@@ -9,7 +9,8 @@ export function addTaskModal(e) {
       <input type="text" name="project_id" id="project_id" value="${e.target.id}">
     </label>
             <label for="task">Task Description*: 
-              <input type="text" name="task" id="task" required>
+              <textarea name="task" id="task" cols="40" 
+              rows="5"  required></textarea>
             </label>
             <label for="status">Status*: 
               <select id="status" name="status">

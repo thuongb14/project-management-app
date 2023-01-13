@@ -19,7 +19,8 @@ export function openEditTaskModal(e) {
             <input type="text" name="tasksid" id="tasksid" value="${response.tasksid}">
         </label>
             <label for="task">Task Description*: 
-              <input type="text" name="task" id="task" required>
+              <textarea name="task" id="task" cols="40" 
+              rows="5" required></textarea>
             </label>
             <label for="status">Status*: 
               <select id="status" name="status">
