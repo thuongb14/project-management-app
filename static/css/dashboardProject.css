@@ -32,10 +32,10 @@ h3 {
   border: 2px solid var(--light-blue);
   background-color: aliceblue;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   height: 200px;
   width: min(200px);
-  margin: 2rem;
+  margin: 3.2rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: space-between;
@@ -91,4 +91,90 @@ h3 {
 .fa-check:hover {
   zoom:120%;
   cursor: pointer;
+}
+
+.fa-check {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-check .tooltipDelete {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 10px;
+  
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.fa-check .tooltipDelete::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.fa-check:hover .tooltipDelete {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fa-edit {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-edit .tooltipEdit {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 10px;
+  
+
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.fa-edit .tooltipEdit::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.fa-edit:hover .tooltipEdit {
+  visibility: visible;
+  opacity: 1;
 }
