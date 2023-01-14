@@ -124,10 +124,10 @@ These are some prequisates and installation instructions if you clone the projec
 ### Prerequisites
 
 These are the prerequisate software needed for app the run locally.
-* Node
-  head to node.js and install the current LTS build
-* PostGreSQL
-  head to postgresql.org and download the latest version
+* Node<br />
+  Install the current LTS build from node.js
+* PostGreSQL<br />
+  Install the latest version of PostgreSQL from postgresql.org
 
 
 ### Installation
