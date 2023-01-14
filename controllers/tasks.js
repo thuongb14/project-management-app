@@ -5,7 +5,7 @@ const router = express.Router();
 const db = require("../database/db.js");
 
 router.get('/', (req, res) => {
-  const sql = `SELECT * FROM project_tasks`;
+  const sql = `SELECT * FROM project_tasks ORDER BY tasksid DESC`;
   db.query(sql,).then(({ rows }) => {
     res.json({
       tasks: rows,

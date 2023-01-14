@@ -15,7 +15,12 @@
     height: auto;
     gap: 2rem;
 }
-
+.task-control {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
 .todo, .doing, .done {
     border: 2px solid var(--light-blue);
     background-color: aliceblue;
@@ -36,6 +41,7 @@ li {
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
+    text-align: left;
 }
 
 .fa-edit {
