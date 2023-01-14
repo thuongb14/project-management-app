@@ -33,9 +33,11 @@ export function openDeleteProjectModal(e) {
 export function deleteProject(e) {
   e.preventDefault()
   const data = document.querySelector('#projectid').value;
-  axios.delete(`/api/projects/${data}`).then(() => {
-    document.querySelector('.modal').classList.add('hidden');
-    renderDashboardProject();
-    console.log(data);
-  });
+  axios.delete(`api/tasks/projects/${data}`).then(() => {
+    axios.delete(`/api/projects/${data}`).then(() => {
+      document.querySelector('.modal').classList.add('hidden');
+      renderDashboardProject();
+    });
+  })
+
 }

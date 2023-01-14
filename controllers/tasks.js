@@ -45,5 +45,16 @@ router.delete('/:id', (req, res) => {
     })
 })
 
+router.delete('/projects/:id', (req, res) => {
+  let id = req.params.id;
+  const sql = "DELETE FROM project_tasks WHERE project_id = $1";
+  db.query(sql, [id])
+    .then(() => {
+      console.log(sql)
+      res.json({ status: "ok" });
+    })
+})
+
 
 module.exports = router;
+
