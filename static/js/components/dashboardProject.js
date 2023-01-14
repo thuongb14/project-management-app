@@ -48,7 +48,7 @@ export function renderDashboardProject() {
 
 export function searchBar(e) {
   const search = document.querySelector('.search');
-  search.addEventListener('submit', () => {
+  search.addEventListener('submit', (e) => {
     const allCards = document.querySelectorAll('.card');
     let input = document.querySelector('.search-box').value.toLowerCase();
     console.log(input);
@@ -60,7 +60,7 @@ export function searchBar(e) {
       } else {
         card.style = 'display: none';
       }
+      e.preventDefault();
     });
   });
-  e.preventDefault();
 }
