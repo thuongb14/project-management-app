@@ -31,24 +31,24 @@ export function renderLandingPage() {
     <div class="feature-column">
       <img class="feature-image" src="https://img.freepik.com/free-vector/partners-holding-big-jigsaw-puzzle-pieces_74855-5278.jpg?w=996&t=st=1671695059~exp=1671695659~hmac=5f61ed5f7395c373663512f6f1a6b237701ecfb56edd6350ff5f671488065c6b" alt="" />
       <div class="feature-name">TEAMWORK</div>
-      <div class="feature-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class="feature-details">PMA is a project management tool that uses a visual "board" system to organize tasks and collaborate with team members. Each board represents a project or a specific aspect of a project, and within each board. <strong>Alone we can do so little; together we can do so much.</strong></div>
     </div>
     <div class="feature-column">
       <img class="feature-image" src="https://img.freepik.com/free-vector/character-illustration-people-holding-speech-bubbles_53876-43081.jpg?w=740&t=st=1671695487~exp=1671696087~hmac=d645461ab0204ff00620f6b3ec479a1028d0eec69a946877792b3fcd51ce6f36" alt="" />
       <div class="feature-name">COMMUNICATIONS</div>
-      <div class="feature-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class="feature-details">Effective communication is a key component of successful project management, and project management apps like PMA are designed to facilitate communication among team members. Team members can stay informed and get project completed on time. </div>
     </div>
     <div class="feature-column">
       <img class="feature-image" src="https://img.freepik.com/free-vector/flat-design-time-management-concept_23-2148813012.jpg?w=740&t=st=1671695535~exp=1671696135~hmac=a21729aef55edfde62320f7c224461690178ea00e3c6d4df0c5fdd5e1a99ca42" alt="" />
       <div class="feature-name">SAVE TIME</div>
-      <div class="feature-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      <div class="feature-details">Saving time in our app can be accomplished in many ways. Prioritizing tasks, streamline communication by centralizing all project related information in one place, and delegating tasks by assigning appropriate team members and providing clear instructions.</div>
     </div>
   </div>
 </div>
 
 <div id="third-row-section">
   <h3>Why Us?</h3>
-  <p>Why not?</p>
+  <p>Easy to use, Flexible, Collaborative, Affordable, Customizable, and its very popular among small businesses and startups. </p>
 </div>
 
 `;
