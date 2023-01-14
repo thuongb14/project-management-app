@@ -26,7 +26,6 @@
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -61,27 +60,16 @@
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
+        <li><a href="#created-by">Created By</a></li>
+        <li><a href="#user-stories">User Stories</a></li>
       </ul>
     </li>
-    <!-- <li> -->
-      <!-- <a href="#getting-started">Getting Started</a> -->
-      <!-- <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul> -->
-    <!-- </li> -->
-    <!-- <li><a href="#usage">Usage</a></li> -->
-    <li><a href="#user-stories">User Stories</a></li>
     <li><a href="#tools">Tools</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#incomplete-tasks">Incomplete Tasks</a></li>
-    <!-- <li><a href="#contributing">Contributing</a></li> -->
-    <!-- <li><a href="#license">License</a></li> -->
-    <!-- <li><a href="#contact">Contact</a></li> -->
-    <!-- <li><a href="#acknowledgments">Acknowledgments</a></li> -->
+    <li><a href="#bugs--issues">Bugs & Issues</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -91,6 +79,16 @@
 
 
 Help manage all your projects, who's a part of them and what tasks haven't started, are in the pipeline and whats complete.
+
+### Built With
+
+* [![Javascript][Javascript]][Javascript-url]
+* [![Express][Express]][Express-url]
+* [![Node][NODE]][NODE-url]
+* [![PostGres][PostGres]][PostGres-url]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Created By
 * [Lizzy Truong](https://github.com/thuongb14)<br />
@@ -113,18 +111,6 @@ Help manage all your projects, who's a part of them and what tasks haven't start
 ### Tools
 * [Trello][Trello-URL]
 * [Excalidraw][Excali-URL]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Javascript][Javascript]][Javascript-url]
-* [![Express][Express]][Express-url]
-* [![Node][NODE]][NODE-url]
-* [![PostGres][PostGres]][PostGres-url]
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,7 +178,7 @@ These are the prerequisate software needed for app the run locally.
 - [✅] Login and Sign Up Page
     - [✅] Guest Login Button (Potential Employers Use Only) 
 - [✅] Dashboard show all projects
-    - [ ] Delete Projects
+    - [✅] Delete Projects
     - [✅] Edit Projects
     - [✅] create projects
         - [✅] Project tasks
@@ -203,25 +189,20 @@ These are the prerequisate software needed for app the run locally.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
 <!-- Incomplete Tasks -->
-### Incomplete Tasks
+## Incomplete Tasks
 - Adding New Members to projects
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Bugs & Issues -->
-### Bugs & Issues
+## Bugs & Issues
 - Getting Project Delete button to work, had some issues parsing project id from front end to back end.
 - Create project button responding with 404 after moving route to proper js file. Issue is now fixed.
+- Deleting Projects that had tasks, caused server to crash. Issue is now fixed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-
-
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -236,25 +217,7 @@ These are the prerequisate software needed for app the run locally.
 [issues-url]: https://github.com/thuongb14/project-management-app/issues
 [license-shield]: https://img.shields.io/github/license/thuongb14/project-management-app.svg?style=for-the-badge
 [license-url]: https://github.com/thuongb14/project-management-app/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/project3_pma.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
 [Javascript]: https://img.shields.io/badge/Javascript-js-brightgreen
 [Javascript-url]: https://www.javascript.com/
 [Express]: https://img.shields.io/badge/Express-js-brightgreen
